@@ -25,8 +25,9 @@
 .product-btn button{
     border: none;
     outline: none;
-    background-color: blue;
+    background-color: lightseagreen;
     color: white;
     border-radius: 8px;
     padding: 4px 8px;
 }
+

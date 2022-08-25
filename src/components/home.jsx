@@ -1,17 +1,23 @@
 import Product from "./product"
 import "./home.css"
+import { useSelector } from "react-redux"
 
 
 
 let Home = () => {
-    return(
+    let state = useSelector((state)=>state);
+    return (
         <>
-        <div className="product-container">
-            <Product/>
-            <Product/>
-            <Product/>
-            <Product/>
-        </div>
+            <div className="product-container">
+                {state.map((el,index)=>(
+                    <Product key={index} data={el} />
+                ))}
+                <button className="shopping-cart-home">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </button>
+            </div>
         </>
     )
 }

@@ -16,7 +16,7 @@ function App() {
         <Route path='/cart'>
           <Cart></Cart>
         </Route>
-        <Route path='/preview'>
+        <Route path='/preview:id'>
           <Preview></Preview>
         </Route>
         <Route path='/'>
