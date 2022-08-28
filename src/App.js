@@ -3,7 +3,7 @@ import Navbar from './components/navbar';
 import Cart from './components/cart';
 import Home from './components/home';
 import Preview from './components/preview';
-import Product from './components/product';
+
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 
 
