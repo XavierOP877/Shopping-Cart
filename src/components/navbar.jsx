@@ -1,11 +1,11 @@
-
+import {Link} from "react-router-dom"
 
 
 let Navbar = () => {
     return (
         <nav class="navbar navbar-dark bg-dark">
         <div className="container-fluid">
-        <a className="navbar-brand">Shopping Cart</a>
+        <Link to="/" className="navbar-brand">Shopping Cart</Link>
         </div>
         </nav>
 

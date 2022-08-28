@@ -6,7 +6,7 @@ let initialState = [
         name:'IPhone',
         img:"https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/x/j/s/iphone-11-128-d-mwm02hn-a-apple-0-original-imafkg242ugz8hwc.jpeg?q=70",
         price:"56000",
-        qty:5,
+        qty:1,
     },
     {
         id:1,
@@ -20,7 +20,7 @@ let initialState = [
         name:"Mercedes Benz",
         img:"https://s1.cdn.autoevolution.com/images/models/MERCEDES-BENZ_GLC-2022_main.jpg",
         price:"4199000",
-        qty:8,
+        qty:1,
     }
 ]
 
@@ -30,6 +30,7 @@ let reducer = (state=initialState,action) =>{
             let cp = state.map((el)=>el);
             let id = action.payload;
             cp[id].qty = cp[id].qty+1;
+            return cp;
         case "REMOVE_FROM_CART":
             cp = state.map((el)=>el);
             id = action.payload;
